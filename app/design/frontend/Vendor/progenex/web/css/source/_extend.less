@@ -2,9 +2,18 @@
 //  display: none;
   
 //}
-//div.panel.wrapper{
-//  display: none;
-//}
+div.panel.wrapper{
+ display: none;
+}
+a.action.advanced{
+  display: none;
+}
+div.block-title{
+  display: none;
+}
+// div.control{
+//   display: none;
+// }
 //div.header.content{
   
 //}
@@ -44,7 +53,7 @@ nav.navigation{
 }
 nav.navigation{
   ul#ui-id-2.ui-menu.ui-widget.ui-widget-content.ui-corner-all{
-    li.level0.nav-2.category-item.first.level-top.ui-menu-item{
+    li.level0.nav-2.category-item.last.level-top.ui-menu-item{
       a.level-top.ui-corner-all:hover{
         color: #AE322E;
       }
@@ -56,24 +65,65 @@ strong.product-item-name{
   display: inline-block;
   font-size: 1.8rem;
   padding: 0rem 1.2rem 0rem 0rem;
+  text-transform:uppercase;
+  font-weight: bold;
 }
 strong.product-item-name>a:hover,.product.name a > a:visited{
   color: #AE322E;
   text-decoration:underline;
+  text-transform:uppercase;
 }
-// a#ui-id-4.level-topi.ui-corner-all:hover {
-//   color: red;
+li.product-item{
+  .page-layout-1column .block.widget .products-grid .product-item{
+    width: 33%;
+  }
+}
+li.product-item:hover{
+  div.product-item-details{
+    a.product-item-link{
+      text-decoration:underline;
+      text-transform:uppercase;
+      color: #AE322E;
+    }    
+    .action.primary{
+      background-color: #fff;
+      border-color: #df3934;
+      color: #df3934;
+    }
+  }
+}
+.product-item.price-box.price{
+  font-family: "proximanova-bold",sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+}
+p{
+  display: none;
+}
+div.footer.content{
+  background-color: #3C4751;
+  color: #fff;
+}
+a,.alink{
+  color: white;
+  text-decoration: none;
+  font-family:  "proximanova-regular",sans-serif;
+}
+// a,.alink:hover{
+//   color: white;
+//   text-decoration: underline;
 // }
-// a#ui-id-3.level-topi.ui-corner-all:hover{
-//    color: green;
-//  }
-// // nav.navigation:hover{
-//   color: #AE322E;
-// }
-// .nav-sections-item-content {
-//   .navigation {
-//      .ui-state-focus {
-//       color: #AE322E;
-//     }
-//   }   
-// }
+a:visited, .alink:visited{
+  color: #fff;
+  text-decoration: none;
+}
+button.action.subscribe.primary{
+  background-color: #df3934;
+  border-color: #df3934;
+  color: #fff;
+}
+button.action.subscribe.primary:hover{
+  background-color:#d93c23 ;
+  border-color: #d93c23;
+  color: #fff;
+}
