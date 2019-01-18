@@ -1,3 +1,7 @@
+//-----------------------//
+//HEADER//
+
+
 //div.header.content {
 //  display: none;
   
@@ -15,8 +19,14 @@ div.block-title{
 //   display: none;
 // }
 //div.header.content{
-  
 //}
+
+
+
+//--------------------//
+//PRODUCTS//
+
+
 .action {
   &.primary {
     background-color: #fff;
@@ -60,7 +70,10 @@ nav.navigation{
     }
   }
 }
-
+.page-layout-1column .block.widget .products-grid .product-item{
+  .page-layout-1column .block.widget .products-grid .product-item{
+    width: 33%;
+  }
 strong.product-item-name{
   display: inline-block;
   font-size: 1.8rem;
@@ -72,10 +85,6 @@ strong.product-item-name>a:hover,.product.name a > a:visited{
   color: #AE322E;
   text-decoration:underline;
   text-transform:uppercase;
-}
-li.product-item{
-  .page-layout-1column .block.widget .products-grid .product-item{
-    width: 33%;
   }
 }
 li.product-item:hover{
@@ -92,6 +101,11 @@ li.product-item:hover{
     }
   }
 }
+.page-layout-1column .block.widget .products-grid .product-item{
+  width: 33.33%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .product-item.price-box.price{
   font-family: "proximanova-bold",sans-serif;
   font-size: 1.8rem;
@@ -100,22 +114,38 @@ li.product-item:hover{
 p{
   display: none;
 }
+// a.action.towishlist::before{
+//   display: none;
+// }
+
+
+
+
+//---------------------//
+//FOOTER//
+
 div.footer.content{
   background-color: #3C4751;
-  color: #fff;
+  color: #df3934;
 }
 a,.alink{
   color: white;
   text-decoration: none;
   font-family:  "proximanova-regular",sans-serif;
+  font-size: 16px;
 }
-// a,.alink:hover{
-//   color: white;
-//   text-decoration: underline;
-// }
+a:hover,.alink:hover{
+  color: #fff;
+  text-decoration: underline;
+}
 a:visited, .alink:visited{
   color: #fff;
   text-decoration: none;
+  font-size: 16px;
+}
+a:visited:hover,.alink:visited:hover{
+  color: #df3934;
+  text-decoration: underline;
 }
 button.action.subscribe.primary{
   background-color: #df3934;
@@ -127,3 +157,4 @@ button.action.subscribe.primary:hover{
   border-color: #d93c23;
   color: #fff;
 }
+
