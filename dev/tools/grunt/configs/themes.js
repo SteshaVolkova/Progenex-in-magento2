@@ -31,6 +31,18 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    progenex: {
+        area: 'frontend',
+        name: 'Vendor/progenex',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
+    },
     luma: {
         area: 'frontend',
         name: 'Magento/luma',
