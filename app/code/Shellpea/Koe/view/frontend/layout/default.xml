@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="top.links">
-            <block class="Shellpea\Koe\Block\Link" name="custom-header-link" after="my-account-link">
+            <block class="Magento\Framework\View\Element\Html\Link" name="custom-header-link" after="my-account-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">Koe-chto</argument>
                     <argument name="path" xsi:type="string" translate="true">koe</argument>
