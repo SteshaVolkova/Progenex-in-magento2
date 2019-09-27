@@ -5,7 +5,11 @@
 	</head>
     <body>
         <referenceContainer name="content">
-            <block class="Shellpea\Koe\Block\Index" name="koe_index_index" template="Shellpea_Koe::index.phtml" />
+            <block class="Shellpea\Koe\Block\Index" name="koe_index_index" template="Shellpea_Koe::index.phtml">
+                <arguments>
+                    <argument name="width" xsi:type="string">700px</argument>
+                </arguments>
+            </block>
         </referenceContainer>
         <referenceBlock name="koe_display" remove="true" />
     </body>
