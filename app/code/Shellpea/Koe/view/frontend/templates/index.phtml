@@ -1,1 +1,22 @@
 <h2>Welcome to my first do-it-yourself page</h2>
+<table border = 1>
+<?php
+    echo "<tr>";
+        for ($a = 0; $a <= 10; $a++) {
+            if(($a % 2) == 0) {
+                echo "<td bgcolor='#d0f86f'>$a</td>";
+            }
+        }
+    echo "</tr><tr>";
+    for ($a = 2; $a <= 10; $a++) {
+        if(($a % 2) == 0) {
+            echo "<td bgcolor='#d0f86f'>$a</td>";
+            for ($b = 2; $b <= 10; $b++) {
+                if (($b % 2) == 0) {
+                    echo "<td bgcolor='#fffb73'>" .$a*$b . "</td>";
+                }
+            }
+        }
+        echo "</tr>";
+    }
+?></table>
