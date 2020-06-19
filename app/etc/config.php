@@ -189,7 +189,12 @@ return [
         'Magento_CatalogWidget' => 1,
         'Dotdigitalgroup_Email' => 1,
         'Magento_WishlistAnalytics' => 1,
+<<<<<<< HEAD
         'Stefany_MyKnokout' => 1,
+=======
+        'Shellpea_Koe' => 1,
+        'Shellpea_Chto' => 1,
+>>>>>>> 324a02f0a28a345888a1dc6254cadb5abed382eb
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]

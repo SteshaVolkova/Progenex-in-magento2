@@ -1,0 +1,23 @@
+<h2>Welcome to my first do-it-yourself page</h2>
+<table border = 1 style="width:<?php echo $block->getWidth(); ?>">
+<?php
+    echo "<tr>";
+    echo "<td bgcolor='#a9f16c'>b\a</td>";
+        for ($a = $block->getMina(); $a <= $block->getMaxa(); $a++) {
+            if(($a % 2) == 0) {
+                echo "<td bgcolor='#d0f86f'>$a</td>";
+            }
+        }
+    echo "</tr><tr>";
+    for ($b = 2; $b <= 10; $b++) {
+        if(($b % 2) == 0) {
+            echo "<td bgcolor='#d0f86f'>$b</td>";
+            for ($a = $block->getMina(); $a <= $block->getMaxa(); $a++) {
+                if (($a % 2) == 0) {
+                    echo "<td bgcolor='#fffb73'>" .$b*$a . "</td>";
+                }
+            }
+        }
+        echo "</tr>";
+    }
+?></table>

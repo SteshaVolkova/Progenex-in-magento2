@@ -18,12 +18,22 @@
  * dsl: dynamic stylesheet language (less|sass)
  *
  */
-
-
 module.exports = {
     blank: {
         area: 'frontend',
         name: 'Magento/blank',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
+    },
+    progenex: {
+        area: 'frontend',
+        name: 'Vendor/progenex',
         locale: 'en_US',
         files: [
             'css/styles-m',
@@ -52,19 +62,5 @@ module.exports = {
             'css/styles'
         ],
         dsl: 'less'
-    },
-
-    // my custom code
-    progenex: {
-      area: 'frontend',
-      name: 'Vendor/progenex',
-      locale: 'en_US',
-      files: [
-           'css/styles-m',
-           'css/styles-l',
-           'css/email',
-           'css/email-inline'
-      ],
-      dsl: 'less'
     }
 };
